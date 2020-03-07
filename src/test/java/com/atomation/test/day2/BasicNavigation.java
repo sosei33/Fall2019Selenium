@@ -1,11 +1,11 @@
-package day2;
-
+package com.atomation.test.day2;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BasicNavigation {
+
     public static void main(String[] args) throws Exception{
         //to start selenium script we need:
         //setup webdriver (browser driver) and create webdriver object
@@ -71,17 +71,11 @@ public class BasicNavigation {
      * @param arg1
      * @param arg2
      */
-    public static void verifyEquals(String arg1, String arg2){
-        if(arg1.equals(arg2)){
+    public static void verifyEquals(String arg1, String arg2) {
+        if (arg1.equals(arg2)) {
             System.out.println("TEST PASSED!");
-        }else{
+        } else {
             System.out.println("TEST FAILED!");
         }
     }
 }
-
-
-
-
-
-

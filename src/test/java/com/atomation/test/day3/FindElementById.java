@@ -1,4 +1,4 @@
-package day3;
+package com.atomation.test.day3;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -40,7 +40,7 @@ public class FindElementById {
         //linkText - equals()
         //partialLinkText - contains() - complete match doesn't required
         //don't put space
-       // WebElement logout = driver.findElement(By.linkText("Logout"));
+        // WebElement logout = driver.findElement(By.linkText("Logout"));
         WebElement logout = driver.findElement(By.partialLinkText("Logout"));
 
         String href = logout.getAttribute("href");
@@ -70,4 +70,5 @@ public class FindElementById {
         driver.quit();
 
     }
+
 }

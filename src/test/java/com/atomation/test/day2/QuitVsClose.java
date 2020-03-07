@@ -1,4 +1,4 @@
-package day2;
+package com.atomation.test.day2;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -13,10 +13,12 @@ public class QuitVsClose {
         WebDriver driver = new ChromeDriver();
 
         driver.get("http://practice.cybertekschool.com/open_new_tab");
-         Thread.sleep(5000);
+        Thread.sleep(5000);
 
 
         //driver.close(); will close only one window
-         driver.quit();
+        driver.quit();
     }
 }
+
+

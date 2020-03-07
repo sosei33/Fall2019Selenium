@@ -1,4 +1,4 @@
-package utilities;
+package com.atomation.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -17,8 +17,9 @@ public class DriverFactory {
             WebDriverManager.chromedriver().setup();
             return new ChromeDriver();
         }else {
-            WebDriverManager.firefoxdriver().setup();
+            WebDriverManager.firefoxdriver().version("79.0").setup();
             return new FirefoxDriver();
         }
     }
+
 }

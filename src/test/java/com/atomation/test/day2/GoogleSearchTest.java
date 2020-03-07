@@ -1,4 +1,4 @@
-package day2;
+package com.atomation.test.day2;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GoogleSearchTest {
+
 
     public static void main(String[] args) throws Exception{
 
@@ -40,3 +41,4 @@ public class GoogleSearchTest {
         driver.close();
     }
 }
+

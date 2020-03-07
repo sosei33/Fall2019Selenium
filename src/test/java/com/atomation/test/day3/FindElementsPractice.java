@@ -1,23 +1,23 @@
-package day3;
+package com.atomation.test.day3;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import com.atomation.utilities.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import utilities.DriverFactory;
+
 
 public class FindElementsPractice {
+
 
     public static void main(String[] args) throws Exception{
         //we are writing same codes again and again
         // we will write a method and call it : DRY Principle
-       //sth that support our code : utilities
+        //sth that support our code : utilities
         // under automation package
-     //We created utilities package and DriverFactory class under automation package
-    //we wrote reusable methods inside DriverFactory class named => createDriver
-   //whenever we need to crate webDriver object
-   //we will call our custom method
+        //We created utilities package and DriverFactory class under automation package
+        //we wrote reusable methods inside DriverFactory class named => createDriver
+        //whenever we need to crate webDriver object
+        //we will call our custom method
        /*
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -55,4 +55,5 @@ public class FindElementsPractice {
 
         driver.quit();//to close everything
     }
+
 }
